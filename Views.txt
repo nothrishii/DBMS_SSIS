@@ -1,0 +1,14 @@
+----VIEWS------
+create view vw_emp
+as
+select * from emp3;
+select * from vw_emp3;
+
+-----INSERTING----
+
+insert into vw_emp values(6,'Hrishi',583106);
+select * from vw_emp;
+
+---UPDATING---
+UPDATE vw_emp set empname='Naini' where empid=3;
+select * from vw_emp;

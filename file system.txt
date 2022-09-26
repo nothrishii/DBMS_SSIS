@@ -1,0 +1,9 @@
+CREATE TABLE AFS_EMP_tgt
+(
+id 	INT,
+name VARCHAR(255),	
+sal INT,
+des varchar(255)
+);
+SELECT * FROM AFS_EMP_tgt;
+TRUNCATE TABLE AFS_EMP_tgt;

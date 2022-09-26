@@ -1,0 +1,61 @@
+CREATE TABLE AL_STORE(
+Row_ID int,
+Order_ID VARCHAR(255),	
+OrderDate DATE,
+ShipDate DATE,	
+Ship_Mode VARCHAR(255),	
+Customer_ID VARCHAR(255),	
+Customer_Name VARCHAR(255),
+Segment VARCHAR(255)
+
+);
+SELECT * FROM AL_STORE;
+DROP TABLE AL_STORE;
+
+SELECT * FROM XYZ123;
+
+UPDATE XYZ123 
+SET SHIPMODE =?, Customer Name=? 
+WHERE ROW_ID=?;
+
+CREATE TABLE AL_STORE2(
+Row_ID FLOAT,
+Order_ID VARCHAR(255),	
+OrderDate DATE,
+ShipDate DATE,	
+Ship_Mode VARCHAR(255),	
+Customer_ID VARCHAR(255),	
+Customer_Name VARCHAR(255),
+Segment VARCHAR(255),
+Country varchar(255),
+city varchar(255),
+State VARCHAR(255),
+Postal_Code int,
+Region VARCHAR(255),	
+Product_ID varchar(255),	
+Category VARCHAR(255),
+Sub_Category VARCHAR(255),	
+Product_name VARCHAR(255),
+Sales VARCHAR(50),	
+Quantity INT,	
+Discount DECIMAL(2,2),	
+Profit VARCHAR(50)
+);
+
+SELECT * FROM AL_STORE2;
+DROP TABLE AL_STORE2;
+
+CREATE TABLE AL_EMP
+(
+id 	INT,
+name VARCHAR(255),	
+sal INT,
+des varchar(255)
+);
+
+SELECT * FROM AL_EMP;
+drop TABLE  AL_EMP; 
+
+UPDATE AL_EMP 
+SET ID=?,SAL=?
+WHERE NAME=?

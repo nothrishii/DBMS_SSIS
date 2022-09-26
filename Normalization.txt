@@ -1,0 +1,62 @@
+--------NORMALIZATION-------
+
+------1nf------
+create table HK (
+E_ID INT,
+E_NAME VARCHAr(50),
+E_SAL INT,
+STU_NAME VARCHAR(100),
+STU_ID INT,
+STU_AGE INT
+);
+select * from HK;
+drop table HK;
+
+insert into HK values(1,'Hrishi',10000,'Naini',100,20),(2,'Likhi',20000,'Neha',100,22),
+(3,'Ashwin',30000,'Navaneeth',100,20);
+
+-----2NF---
+CREATE TABLE HK_S2 (
+STU_NAME VARCHAR(100),
+STU_ID INT,
+STU_AGE INT
+);
+
+SELECT * FROM HK_S2;
+insert into A_S2 values('Naini',100,20),('Neha',100,22),
+('Navaneeth',100,20);
+
+CREATE TABLE HK_E2 (
+E_ID INT,
+E_NAME VARCHAr(50),
+E_SAL INT
+);
+insert into HK_E2 values(1,'Hrishikesh',10000),(2,'Likhi',20000),
+(3,'Ashwin',30000);
+SELECT * FROM HK_E2;
+
+-----3NF-----
+CREATE TABLE HK_S2 (
+STU_NAME VARCHAR(100),
+STU_ID INT,
+STU_AGE INT
+);
+
+CREATE TABLE HK_SS1 
+(
+STU_NAME VARCHAR(100),
+STU_ID INT
+);
+insert into HK_SS1 values('Hrishikesh',100),('Neha',100),
+('Navaneeth',100);
+SELECT * FROM HK_SS1;
+
+
+CREATE TABLE HK_SS2 
+(
+STU_ID INT,
+STU_AGE INT
+);
+insert into HK_SS1 values(10,100),(20,100),
+(30,100);
+SELECT * FROM HK_SS1;
